@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="card">
+      <h1>Testing this</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi
+        maxime necessitatibus quaerat eaque, incidunt neque quam facere
+        recusandae veniam, quasi id. Sint cumque asperiores totam tempora
+        voluptates commodi debitis?
+      </p>
+    </div>
     <script>
       document.querySelector("body").onmousemove = e => {
-        // console.log(e);
-        e.target.style.setProperty("--x", `${e.pageX}px`);
-        e.target.style.setProperty("--y", `${e.pageY}px`);
+        const x = e.pageX - e.target.offsetLeft;
+        const y = e.pageY - e.target.offsetTop;
+        e.target.style.setProperty("--x", `${x}px`);
+        e.target.style.setProperty("--y", `${y}px`);
       };
     </script>
   </body>

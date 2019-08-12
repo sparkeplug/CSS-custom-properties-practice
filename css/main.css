@@ -1,15 +1,22 @@
 body {
   height: 100vh;
   margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: "Lato", sans-serif;
+  color: white;
 }
 
-body::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: red;
-  height: var(--y);
-  width: var(--x);
+.card {
+  background: radial-gradient(circle at var(--x) var(--y), #5de7ff 0%, #0092ec 100%);
+  border-radius: 15px;
+  padding: 1em 2em;
+  width: 40%;
+}
+
+.card h1,
+.card p {
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */
