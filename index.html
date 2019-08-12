@@ -9,7 +9,7 @@
   </head>
   <body>
     <script>
-      document.querySelector("body").onclick = e => {
+      document.querySelector("body").onmousemove = e => {
         // console.log(e);
         e.target.style.setProperty("--x", `${e.pageX}px`);
         e.target.style.setProperty("--y", `${e.pageY}px`);
